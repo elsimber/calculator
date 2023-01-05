@@ -1,0 +1,22 @@
+<div class = "container">
+      
+  <!-- Number Display -->
+  <div id = "display">0</div>
+
+  <div class = "button-container">
+    <!-- Function Buttons -->
+      <div class = "func-container">
+        <%= for (button in funcButtons) %>
+          <div class = "button"><% button.func %></div>
+        <% end %>
+      </div>
+
+    <!-- Number Buttons -->
+      <div class = "num-container">
+        <%= for (button in numButtons) %>
+          <div class = "button"><% button.value %></div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div> 
